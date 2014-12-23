@@ -43,6 +43,7 @@ type GistFilename string
 // GistFile represents a file on a gist.
 type GistFile struct {
 	Size      *int    `json:"size,omitempty"`
+	Type      *string `json:"type,omitempty"`
 	Truncated *bool   `json:"truncated,omitempty"`
 	Filename  *string `json:"filename,omitempty"`
 	RawURL    *string `json:"raw_url,omitempty"`
